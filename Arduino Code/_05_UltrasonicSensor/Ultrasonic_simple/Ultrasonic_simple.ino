@@ -1,14 +1,17 @@
 
+//define pins for input:
 const int trigPin = D5;
 const int echoPin = D6;
 // defines variables
 long duration;
 int distance;
+//--------------------------------SETUP------------------------------------
 void setup() {
 pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
 pinMode(echoPin, INPUT); // Sets the echoPin as an Input
 Serial.begin(250000); // Starts the serial communication
 }
+//--------------------------------LOOP----------------------------------------
 void loop() {
 // Clears the trigPin
 digitalWrite(trigPin, LOW);
